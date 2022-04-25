@@ -1,0 +1,37 @@
+{
+    "type": "bubble",
+    "size": "micro",
+    "hero": {
+        "type": "image",
+        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip10.jpg",
+        "size": "full",
+        "aspectMode": "cover",
+        "aspectRatio": "320:320"
+    },
+    "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [{
+            "type": "text",
+            "text": "Brown Cafe",
+            "weight": "bold",
+            "size": "sm",
+            "wrap": true
+        }],
+        "spacing": "sm",
+        "paddingAll": "13px"
+    },
+    "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [{
+            "type": "button",
+            "action": {
+                "type": "postback",
+                "label": "我要這張",
+                "data": "hello"
+            }
+
+        }]
+    }
+}
