@@ -9,19 +9,6 @@
         "aspectRatio": "320:320",
         "animated": false
     },
-    "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [{
-            "type": "text",
-            "text": "Brown Cafe",
-            "weight": "bold",
-            "size": "sm",
-            "wrap": true
-        }],
-        "spacing": "sm",
-        "paddingAll": "13px"
-    },
     "footer": {
         "type": "box",
         "layout": "vertical",

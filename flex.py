@@ -11,7 +11,7 @@ def search(query):
   titles = []
   imgs = []
   thumbs = []
-  url = f"https://www.googleapis.com/customsearch/v1?key={API_KEY}&cx={SEARCH_ENGINE_ID}&q={query}&searchType=image&siteSearch=facebook.com&siteSearchFilter=e&c2coff=1"
+  url = f"https://www.googleapis.com/customsearch/v1?key={API_KEY}&cx={SEARCH_ENGINE_ID}&q={query}&searchType=image&siteSearch=memes.tw&siteSearchFilter=i&c2coff=1"
   data = requests.get(url).json()
   search_items = data.get("items")
   for item in search_items:
@@ -38,11 +38,11 @@ def flex(msg):
     with open('template.json') as f:
       bubble = json.load(f)
     bubble['hero']['url'] = imgs[i]
-    bubble['body']['contents'][0]['text'] = titles[i]
+    # bubble['body']['contents'][0]['text'] = titles[i]
     bubble['footer']['contents'][0]['action']['data'] = imgs[i]
     carousel['contents'].append(bubble.copy())
   
   print("search results: ")
-  print(titles)
+  print(imgs)
   result = json.dumps(carousel)
   return result
