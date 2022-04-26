@@ -18,7 +18,8 @@
                 "type": "postback",
                 "label": "我要這張",
                 "data": "hello"
-            }
+            },
+            "style": "secondary"
 
         }]
     }
